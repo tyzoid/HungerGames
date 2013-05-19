@@ -1,0 +1,29 @@
+name: HungerGames
+main: tk.tyzoid.plugins.hungergames.Hungergames
+version: 0.0.1a
+author: Tyzoid
+softdepend: [Multiverse-Core]
+permissions:
+    hungergames.*:
+        description: Gives access to all hungergames commands
+        children:
+            hungergames.tool: true
+            hungergames.join: true
+            hungergames.start: true
+            hungergames.spectate: true
+            hungergames.admin: true
+    hungergames.tool:
+        description: Allows people to bind functions to tools.
+        default: op
+    hungergames.join:
+        description: Allows people to join in the hunger games.
+        default: true
+    hungergames.start:
+        description: Allows people to start the games
+        default: op
+    hungergames.clear:
+        description: Allows people to clear the starting positions.
+        default: op
+    hungergames.spectate:
+        description: Allows people to spectate the game.
+        default: true
